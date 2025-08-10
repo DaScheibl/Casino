@@ -1,9 +1,18 @@
 ﻿<Application x:Class="Casino.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Casino"
-             StartupUri="Main.xaml">
+             xmlns:vm="clr-namespace:Casino.ViewModels"
+             xmlns:v="clr-namespace:Casino.Views"
+             StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <DataTemplate DataType="{x:Type vm:StartPageViewModel}">
+            <v:StartPage/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:LoginPageViewModel}">
+            <v:LoginPage/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:RegisterPageViewModel}">
+            <v:RegisterPage/>
+        </DataTemplate>
     </Application.Resources>
 </Application>

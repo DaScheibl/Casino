@@ -10,20 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Casino.ViewModels;
 
 namespace Casino.Views
 {
     /// <summary>
-    /// Interaktionslogik für Main.xaml
+    /// Interaktionslogik für RegisterPage.xaml
     /// </summary>
-    public partial class Main : Window
+    public partial class RegisterPage : UserControl
     {
-        public Main()
+        public RegisterPage()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
         }
     }
 }
